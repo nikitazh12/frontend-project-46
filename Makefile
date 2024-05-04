@@ -15,3 +15,5 @@ lint:
 
 lint-fix:
 	npx eslint . --fix
+
+.PHONY: test
