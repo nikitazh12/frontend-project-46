@@ -1,14 +1,17 @@
-install:
+install: 
 	npm ci
 
-lint: 
-		npx eslint .
-
-gendiff:
-	node bin/gendiff.js
+run:
+	bin/gendiff.js
 
 test:
-		npx jest
+	npm test
 
 test-coverage:
 	npm test -- --coverage --coverageProvider=v8
+
+lint:
+	npx eslint .
+
+lint-fix:
+	npx eslint . --fix
